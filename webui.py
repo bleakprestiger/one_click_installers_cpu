@@ -191,12 +191,12 @@ if __name__ == "__main__":
         update_dependencies()
     else:
         # If webui has already been installed, skip and run
-        if not os.path.exists("text-generation-webui/"):
+        if not os.path.exists("Text_Generation_WebGUI/"):
             install_dependencies()
             os.chdir(script_dir)
 
         # Check if a model has been downloaded yet
-        if len(glob.glob("text-generation-webui/models/*/")) == 0:
+        if len(glob.glob("Text_Generation_WebGUI/models/*/")) == 0:
             download_model()
             os.chdir(script_dir)
 
