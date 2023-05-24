@@ -170,12 +170,12 @@ def update_dependencies():
 
 
 def download_model():
-    os.chdir("text-generation-webui")
+    os.chdir("Text_Generation_WebGUI")
     run_cmd("python download-model.py", environment=True)
 
 
 def run_model():
-    os.chdir("text-generation-webui")
+    os.chdir("Text_Generation_WebGUI")
     run_cmd(f"python server.py {CMD_FLAGS}", environment=True)
 
 
