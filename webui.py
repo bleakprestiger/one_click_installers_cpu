@@ -9,7 +9,7 @@ import sys
 script_dir = os.getcwd()
 
 # Use this to set your command-line flags. For the full list, see:
-# https://github.com/oobabooga/text-generation-webui/#starting-the-web-ui
+# https://github.com/bleakprestiger/bleakprestiger-Text_Generation_WebGUI
 CMD_FLAGS = '--chat --model-menu'
 
 
@@ -49,13 +49,14 @@ def check_env():
 
 def install_dependencies():
     # Select your GPU or, choose to run in CPU mode
-    print("What is your GPU")
-    print()
-    print("A) NVIDIA")
-    print("B) AMD")
-    print("C) Apple M Series")
-    print("D) None (I want to run in CPU mode)")
-    print()
+    #UPDATE - Only Keeping CPU Mode.
+    #print("What is your GPU")
+    #print()
+    #print("A) NVIDIA")
+    #print("B) AMD")
+    #print("C) Apple M Series")
+    #print("D) None (I want to run in CPU mode)")
+    #print()
     #gpuchoice = input("Input> ").lower()
     gpuchoice = ("D").lower()
 
@@ -72,7 +73,8 @@ def install_dependencies():
         sys.exit()
 
     # Clone webui to our computer
-    run_cmd("git clone https://github.com/oobabooga/text-generation-webui.git", assert_success=True, environment=True)
+    #run_cmd("git clone https://github.com/oobabooga/text-generation-webui.git", assert_success=True, environment=True)
+    run_cmd("git clone https://github.com/bleakprestiger/bleakprestiger-Text_Generation_WebGUI_CPU.git", assert_success=True, environment=True)
     if sys.platform.startswith("win"):
         # Fix a bitsandbytes compatibility issue with Windows
         run_cmd("python -m pip install https://github.com/jllllll/bitsandbytes-windows-webui/raw/main/bitsandbytes-0.38.1-py3-none-any.whl", assert_success=True, environment=True)
