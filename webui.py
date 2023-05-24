@@ -84,7 +84,7 @@ def install_dependencies():
 
 
 def update_dependencies():
-    os.chdir("text-generation-webui")
+    os.chdir("Text_Generation_WebGUI")
     run_cmd("git pull", assert_success=True, environment=True)
 
     # Installs/Updates dependencies from all requirements.txt
