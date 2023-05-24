@@ -56,7 +56,8 @@ def install_dependencies():
     print("C) Apple M Series")
     print("D) None (I want to run in CPU mode)")
     print()
-    gpuchoice = input("Input> ").lower()
+    #gpuchoice = input("Input> ").lower()
+    gpuchoice = ("D").lower()
 
     # Install the version of PyTorch needed
     if gpuchoice == "a":
