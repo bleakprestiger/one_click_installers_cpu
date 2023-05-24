@@ -9,7 +9,7 @@ import sys
 script_dir = os.getcwd()
 
 # Use this to set your command-line flags. For the full list, see:
-# https://github.com/oobabooga/text-generation-webui/#starting-the-web-ui
+# https://github.com/bleakprestiger/bleakprestiger-Text_Generation_WebGUI
 CMD_FLAGS = '--chat --model-menu'
 
 
