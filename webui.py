@@ -49,13 +49,14 @@ def check_env():
 
 def install_dependencies():
     # Select your GPU or, choose to run in CPU mode
-    print("What is your GPU")
-    print()
-    print("A) NVIDIA")
-    print("B) AMD")
-    print("C) Apple M Series")
-    print("D) None (I want to run in CPU mode)")
-    print()
+    #UPDATE - Only Keeping CPU Mode.
+    #print("What is your GPU")
+    #print()
+    #print("A) NVIDIA")
+    #print("B) AMD")
+    #print("C) Apple M Series")
+    #print("D) None (I want to run in CPU mode)")
+    #print()
     #gpuchoice = input("Input> ").lower()
     gpuchoice = ("D").lower()
 
